@@ -2,10 +2,10 @@ import utilities from '../helpers/utilities.js'
 
 //5- made an array for my for loop
 const condiments = [
-{id: "con1", name:"Mayo", price: 50.00},
-{id: "con2", name:"Ketchup", price: 50.00},
-{id: "con3", name:"Mustard", price: 50.00},
-{id: "con4", name:"Oil", price: 100.00}
+{id: "con1", name:"Mayo", price: 50},
+{id: "con2", name:"Ketchup", price: 50},
+{id: "con3", name:"Mustard", price: 50},
+{id: "con4", name:"Oil", price: 10}
 ];
 
 const getSelectedCondiments = () => {

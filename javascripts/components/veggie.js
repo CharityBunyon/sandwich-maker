@@ -2,10 +2,10 @@ import utilities from '../helpers/utilities.js'
 
 //5- made an array for my for loop
 const veggies = [
-{id: "veggie1", name:"Lettuce", price: 200.00},
-{id: "veggie2", name:"Tomato", price: 300.00},
-{id: "veggie3", name:"Pickle", price: 300.00},
-{id: "veggie4", name:"Olive", price: 400.00}
+{id: "veggie1", name:"Lettuce", price: 20},
+{id: "veggie2", name:"Tomato", price: 30},
+{id: "veggie3", name:"Pickle", price: 30},
+{id: "veggie4", name:"Olive", price: 40}
 ];
 
 const getSelectedVeggies = () => {

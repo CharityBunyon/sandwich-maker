@@ -2,10 +2,10 @@ import utilities from '../helpers/utilities.js'
 
 //5- made an array for my for loop
 const meats = [
-{id: "meat1", name:"Bacon", price: 300.00},
-{id: "meat2", name:"Steak", price: 700.00},
-{id: "meat3", name:"Turkey", price: 700.00},
-{id: "meat4", name:"Chicken", price: 500.00}
+{id: "meat1", name:"Bacon", price: 300},
+{id: "meat2", name:"Steak", price: 700},
+{id: "meat3", name:"Turkey", price: 700},
+{id: "meat4", name:"Chicken", price: 500}
 ];
 
 const getSelectedMeats = () => {
