@@ -32,3 +32,12 @@ button{
  background-color: black;
  border: none;
 }
+
+.items-div{
+    margin: 20px 0px 0px 0px;
+}
+
+#order-button{
+    background-color: #000;
+}
+

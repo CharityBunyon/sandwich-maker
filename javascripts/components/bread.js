@@ -29,7 +29,7 @@ const getSelectedBreads = () => {
 const printBreadOptions = () => {
     let domString = '';
     for (let i = 0; i < breads.length; i++){
-    domString +=` <div class="form-check">
+    domString +=` <div class="form-check items-div">
     <input type="checkbox" class="form-check-input bread" id="${breads[i].id}">
     <label class="form-check-label" for="${breads[i].id}">${breads[i].name}</label>
   </div>`;
