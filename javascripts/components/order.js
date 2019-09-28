@@ -1,4 +1,8 @@
 import bread from './bread.js';
+import cheese from './cheese.js';
+import condiment from './condiment.js';
+import meat from './meat.js';
+import veggie from './veggie.js';
 import utilities from '../helpers/utilities.js';
 
 const createFinalOrder = (items) => {
@@ -11,10 +15,18 @@ const createFinalOrder = (items) => {
 }
 
 const createOrderEvent = () => {
-    const selectedBreads = bread.getSelectedBreads();
+    // const selectedBreads = bread.getSelectedBreads();
+    // const selectedMeats = meat.getSelectedMeats();
     // const selectedMeats = meat.getSelectedMeats(); TODO
-    createFinalOrder(selectedBreads);
+    // createFinalOrder(selectedBreads, selectedMeats);
     //12- created a final function
+    const selectedBreads = bread.getSelectedBreads();
+    const selectedCheeses = cheese.getSelectedCheeses();
+    const selectedMeats = meat.getSelectedMeats();
+    const selectedVeggies = veggie.getSelectedVeggies();
+    const selectedCondiments = condiment.getSelectedCondiments();
+    const allItems = selectedBreads.concat(selectedMeats, selectedCheeses, selectedVeggies, selectedCondiments);
+    createFinalOrder(allItems);
 
 };
 //10 selected cheeses will be in cheese.js
