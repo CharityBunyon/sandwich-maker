@@ -10,8 +10,8 @@
 </head>
 <body>
     <h1>Sandwich Maker</h1>
-    <div class="container">
-        <div class="row">
+    <div class="container ml-10">
+        <div class="row d-flex">
             <div class="col-2">
                 <h5>Breads</h5>
                 <div id="bread-counter"></div>
@@ -28,17 +28,15 @@
                     <h5>Condiments</h5>
                 <div id="condiment-counter"></div> 
             </div>
-            <div class="Veggies">
+            <div class="col-2">
                     <h5>Veggies</h5>
                 <div id="veggie-counter"></div> 
             </div>
 
         </div>
-        <div class="row">
-            <div id="final-order"></div>
-            <div id="total"></div>
-            <!-- this button need to come on page load -->
-        </div>
+
+        <div id="final-order" class="mx-auto" style="width: 200px;"></div>
+        <div id="total" class="mx-auto" style="width: 200px;"></div>
     </div>
         
 
