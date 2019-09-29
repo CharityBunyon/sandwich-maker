@@ -39,6 +39,12 @@ const createOrderEvent = () => {
     createFinalOrder(allItems);
 
 };
+
+const thanks =() => {
+    if(event.target.innerHTML === "Complete Order") {
+        alert('Thank you for your order!');
+    }
+};
 //10 selected cheeses will be in cheese.js
 
 const printOrderButton = () => { 
@@ -46,11 +52,20 @@ const printOrderButton = () => {
     utilities.printToDom('final-order', domString);
     document.getElementById('order-button').addEventListener('click', createOrderEvent);
     // 9-added event, put an id on the button, created a function
-
+    document.getElementById("order-button").addEventListener('click',
+        function(event) {
+          if (event.target.innerHTML === "Make Sandwich") {
+            event.target.innerHTML = "Complete Order";
+          } 
+          document.getElementById("order-button").addEventListener('click', thanks)
+        },
+        // false
+      );
 };
+
+// document.getElementById("order-button").addEventListener('click', thanks)
 
 //8- made function and added import
 
 
-
-export default { printOrderButton };
+export default { printOrderButton, thanks, };

@@ -33,11 +33,22 @@ button{
  border: none;
 }
 
-.items-div{
-    margin: 20px 0px 0px 0px;
+
+.build {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.receipt {
+    margin: 15px 0px;
+    padding: 20px; 
+    background-color: #fff1d0;
+    border-radius: 25px;
 }
 
 #order-button{
     background-color: #000;
 }
+
+
 
