@@ -4,7 +4,9 @@
 Use this application to select sandwich toppings and get a final cost for your sandwich creation.
 
 ## Screenshots
-![Sandwich Maker Preview]()
+![Sandwich Maker Preview 1](https://github.com/CharityBunyon/sandwich-maker/raw/master/screenshots/SS1.png)
+
+![Sandwich Maker Preview 2](https://raw.githubusercontent.com/CharityBunyon/sandwich-maker/master/screenshots/SS2.png)
 
 ## How to run
 * Clone down this project 
