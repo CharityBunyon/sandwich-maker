@@ -40,11 +40,11 @@ const createOrderEvent = () => {
 
 };
 
-const thanks =() => {
-    if(event.target.innerHTML === "Complete Order") {
-        alert('Thank you for your order!');
-    }
-};
+// const thanks =() => {
+//     if(event.target.innerHTML === "Complete Order") {
+//         alert('Thank you for your order!');
+//     }
+// };
 //10 selected cheeses will be in cheese.js
 
 const printOrderButton = () => { 
@@ -57,7 +57,7 @@ const printOrderButton = () => {
           if (event.target.innerHTML === "Make Sandwich") {
             event.target.innerHTML = "Complete Order";
           } 
-          document.getElementById("order-button").addEventListener('click', thanks)
+          
         },
         // false
       );
@@ -68,4 +68,4 @@ const printOrderButton = () => {
 //8- made function and added import
 
 
-export default { printOrderButton, thanks, };
+export default { printOrderButton };
