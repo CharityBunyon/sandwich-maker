@@ -1,5 +1,6 @@
 import utilities from '../../helpers/utilities';
-
+import breadData from '../../helpers/data/breadData';
+import breadCard from '../breadCard/breadCard';
 // 5- made an array for my for loop
 const breads = [
   { id: 'bread1', name: 'Rhye', price: 300 },
@@ -9,9 +10,6 @@ const breads = [
 ];
 
 const getSelectedBreads = () => {
-// 11- get all cheese checkboxes (give domstring a class of cheese)
-// keep the checked ones in a new array
-// return the new array
   const selectedBreads = [];
   const breadCheckboxes = document.getElementsByClassName('bread');
   // eslint-disable-next-line no-plusplus
@@ -27,18 +25,16 @@ const getSelectedBreads = () => {
 };
 
 // 4th: import utilities, make function, and export the function name
-const printBreadOptions = () => {
+const printBreadOptions = (uid) => {
   let domString = '';
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < breads.length; i++) {
-    domString += ` <div class="form-check items-div">
-    <input type="checkbox" class="form-check-input bread" id="${breads[i].id}">
-    <label class="form-check-label" for="${breads[i].id}">${breads[i].name}</label>
-  </div>`;
-  }
-  // 6- made for loop here. added name.
-  // 7- put cheese id and for because thats how screen readers relate??
-  utilities.printToDom('bread-counter', domString);
+  breadData.getBreads(uid)
+    // eslint-disable-next-line no-shadow
+    .then((breads) => {
+      breads.forEach((bread) => {
+        domString += breadCard.makeBreadCheckboxes(bread);
+      });
+      utilities.printToDom('bread-counter', domString);
+    });
 };
 
 export default { printBreadOptions, getSelectedBreads };

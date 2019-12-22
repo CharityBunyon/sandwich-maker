@@ -1,0 +1,27 @@
+{
+  "bread1": {
+    "name": "Rhye",
+    "price": "300",
+    "uid": "n7hCsJvHurVXAFt5VXpczOx0Ju32"
+  },
+  "bread2": {
+    "name": "White",
+    "price": "200",
+    "uid": "n7hCsJvHurVXAFt5VXpczOx0Ju32"
+  },
+  "bread3": {
+    "name": "Wheat",
+    "price": "200",
+    "uid": "n7hCsJvHurVXAFt5VXpczOx0Ju32"
+  },
+  "bread4": {
+    "name": "Croissant",
+    "price": "300",
+    "uid": "n7hCsJvHurVXAFt5VXpczOx0Ju32"
+  },
+  "bread5": {
+    "name": "Sandwich Maker",
+    "price": "300",
+    "uid": "n7hCsJvHurVXAFt5VXpczOx0Ju32"
+  }
+}
