@@ -1,4 +1,9 @@
 import utilities from '../../helpers/utilities';
+// import i from '../../helpers/data/carouselImages';
+import sand1 from '../../../../images/sand1.jpg';
+import sand2 from '../../../../images/sand2.jpg';
+import sand3 from '../../../../images/sand3.jpg';
+
 
 const printCarousel = () => {
   const domString = `<div id="carouselExampleControls" class="carousel slide container" data-ride="carousel">
@@ -9,13 +14,13 @@ const printCarousel = () => {
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://images.unsplash.com/photo-1558985250-27a406d64cb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="First slide">
+      <img class="d-block w-100" src="${sand1}" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Second slide">
+      <img class="d-block w-100" src="${sand2}" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Third slide">
+      <img class="d-block w-100" src="${sand3}" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
